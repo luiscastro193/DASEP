@@ -22,11 +22,23 @@
 		<header class="main-header">
 			<label for="main-info-checkbox"><h1>Proyecto DAS-EP: resultados descriptivos <span><i class="fa-solid fa-circle-info"></i></span></h1></label>
 			<input id="main-info-checkbox" type="checkbox">
-			<p class="main-info">Para obtener los resultados descriptivos pulse el botón Visualizar una vez haya seleccionado las variables, los estimadores, las segmentaciones y las regiones.
+			<p class="main-info">Para obtener los resultados descriptivos pulse el botón <b>'Visualizar'</b> una vez haya seleccionado las variables, los estimadores, las segmentaciones y las regiones, accediendo así a otra página donde aparecerá un 'Índice de contenidos seleccionados' y, debajo, enlaces a cada una de las variables, estimadores y segmentaciones seleccionadas.
 
-Para facilitar la selección, verá que por defecto vienen seleccionados los estimadores para las variables originales y las dicotomizadas, las segmentaciones de sexo y edad, y todas las regiones. Usted puede seleccionar más si lo desea pulsando encima de ellas.
+Para facilitar la selección, <b>por defecto</b> vienen seleccionados los estimadores para las variables originales y las dicotomizadas, las segmentaciones de sexo y edad, y todas las regiones. Si lo desea, puede seleccionar más o menos pulsando encima de estas.
 
-En cuanto a la armonización realizada entre las encuestas de Andalucía, País Vasco, Comunidad Valenciana y Barcelona, pulsando <a class="link" href="DAS-EP_Armonización.pdf" target="_blank">aquí</a> puede descargarse un informe donde se describe todo el proceso seguido.</p>
+En cuanto a la <b>armonización</b> realizada entre las encuestas de Andalucía, País Vasco, Comunidad Valenciana y Barcelona, pulsando <a class="link" href="documents/DAS-EP_Armonización.pdf" download>aquí</a> puede descargarse un informe donde se describe todo el proceso seguido, y pulsando en los siguientes enlaces, se descargará los cuestionarios utilizados:
+
+- <a class="link" href="documents/cuestionarios_EAS.zip" download>Encuesta Andaluza de Salud 2022/23: cuestionario adultos y hogar</a>.
+
+- <a class="link" href="documents/cuestionarios_ESCAV.zip" download>Encuesta de Salud del País Vasco 2023: cuestionario individual y familiar</a>.
+
+- <a class="link" href="documents/Valencia - Cuestionario Adultos_2022.pdf" download>Encuesta de Salud de la Comunidad Valenciana 2022</a>.
+
+- <a class="link" href="documents/Barcelona - Q General ESB21 CAST_DEF.pdf" download>Encuesta de Salud de Barcelona 2021</a>.
+
+Para solicitar los <b>microdatos</b> y diccionario de variables escriba a <a class="link" href="mailto:maialen.otamendi@ehu.eus" target="_blank">maialen.otamendi@ehu.eus</a>.
+
+Para obtener <b>más información</b> sobre cada elemento pulse en la 'i' situada a la derecha de cada uno.</p>
 		</header>
 	</header>
 	<main class="selection-page">
@@ -34,7 +46,9 @@ En cuanto a la armonización realizada entre las encuestas de Andalucía, País 
 			<div class="selection-header">
 				<input id="var-info-checkbox" type="checkbox">
 				<label for="var-info-checkbox"><h3><span>Seleccione las variables del listado de abajo o búsquelas a continuación</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
-				<p class="selection-info">Las variables se presentan divididas en distintos bloques de información. Busque el bloque deseado haciendo scroll. Una vez dentro, puede seleccionar varias variables.</p>
+				<p class="selection-info">Las variables se agrupan en bloques y subbloques de información. Encuentre el bloque deseado haciendo scroll y, una vez seleccionado, puede seleccionar todos los subbloques o los de su interés.
+
+Para buscar, pulse en ‘Buscador' e introduzca las palabras a buscar sin artículos ni conjunciones. Si introduce varias, el buscador las considerará todas a la vez. Por ejemplo, si introduce ‘ejercicio físico’, se seleccionarán automáticamente aquellos subbloques en los que en la descripción o etiquetas de las variables aparezcan ambas palabras. Además, usted puede deseleccionar aquel subbloque que no le interese pulsando de nuevo encima del mismo, e incluso añadir otros no seleccionados en la búsqueda. Una vez haya confirmado los subbloques, el siguiente paso es seleccionar los estimadores, las segmentaciones y las ediciones.</p>
 			</div>
 			<div class="selection-search">
 				<label><h3>Buscador:<input type="search"></input></h3></label>
@@ -54,7 +68,17 @@ En cuanto a la armonización realizada entre las encuestas de Andalucía, País 
 				<div class="selection-header">
 					<input id="seg-info-checkbox" type="checkbox">
 					<label for="seg-info-checkbox"><h3><span>Seleccione las segmentaciones</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
-					<p class="selection-info">Se presentan los resultados descriptivos totales y según sexo. Además, puede elegir una segunda variable de estratificación.</p>
+					<p class="selection-info">Se presentan los resultados descriptivos totales y según sexo. Además, puede elegir una segunda variable de segmentación como:
+
+- Edad: 16-24, 25-34, 35-44, 45-54, 55-64, 65-74 y 75 o más años.
+
+- Nivel de estudios (entrevistado/a): hasta primarios (no sabe leer/escribir, sin estudios, hasta 5º EGB o similar), Secundarios (EGB, ESO, FP, Bachillerato) y Universitarios.
+
+- Clase social (entrevistado/a, CNO2012 y SEE): 
+- I-II (directores/as, gerentes, deportistas, artistas), III (administrativo/as, gestión, otros servicios), IV-V (cuenta propia, ocupaciones técnicas cualificadas), VI (cualificados sectores primarios, semicualificados), VII (no cualificados) y Nunca ha trabajado.
+- Manual (categorías I a III) y No manual (categorías IV y V)
+
+- Áreas urbanas: municipios con más o menos de 100.000 habitantes.</p>
 				</div>
 				<form id="seg-selection" class="selection-form"></form>
 			</section>
